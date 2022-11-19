@@ -1,16 +1,23 @@
 import React from 'react'
 import { auth } from '../firebase'
+import Messages from './Messages'
+import Sendmess from './Sendmess'
+
 
 function Chat() {
-  const x =()=>{
-
-  }
+  
   return (
     <div>
       
-      Welocome to chat room
+      
       <div><button onClick={()=>{auth.signOut()}}>Signout</button></div>
 
+      
+        
+        <Messages />
+        <Sendmess />
+
+  
       
     </div>
 

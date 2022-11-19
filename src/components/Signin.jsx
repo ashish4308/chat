@@ -4,9 +4,9 @@ import {GoogleAuthProvider , signInWithRedirect} from 'firebase/auth'
 
 function Signin() {
     
-    const done= async()=>{
+    const done= ()=>{
         const p = new GoogleAuthProvider()
-        await signInWithRedirect(auth,p)
+        signInWithRedirect(auth,p)
     }
    
 
